@@ -4,7 +4,7 @@
 
 /**
  * main - entry point
- * Description: Determines if a number is positive, negative or zero
+ * Description: 'Determines if a number is positive, negative or zero'
  * Return: 0
  * /
 int main(void)
