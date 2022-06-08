@@ -7,18 +7,22 @@
  * Return: last digit
  */
 int print_last_digit(int k)
-{
-	int l;
 
-	l = k % 10;
-	if (l < 0)
+{
+	int last_digit;
+
+	if (k < 0)
 	{
-		_putchar(-l + 34);
-		return (-l);
+		last_digit = (-1 * (k % 10));
+		_putchar (last_digit + '0');
+		return (last_digit);
 	}
+
 	else
 	{
-		_putchar(l + 34);
-		return (l);
+		last_digit = (k % 10);
+		_putchar (last_digit + '0');
+		return (last_digit);
 	}
+
 }
