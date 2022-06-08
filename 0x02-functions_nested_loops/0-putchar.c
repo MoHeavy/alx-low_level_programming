@@ -1,13 +1,21 @@
 #include "main.h"
-#include <unistd.h>
 /**
+ * main - check code
  * _putchar - prints character c to stdout
  * @c: - Character to be printed
- * Return: 1 if successful
- * -1 on error, and errno is set
+ * Return: 0
  */
 
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+char c = "_putchar";
+int k;
+for (k = 0; k < 8; k++)
+
+{
+_putchar(c[k]);
+}
+
+_putchar('\n');
+return (0);
 }
