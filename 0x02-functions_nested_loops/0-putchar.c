@@ -2,20 +2,17 @@
 /**
  * main - check code
  * _putchar - prints character c to stdout
- * @c: - Character to be printed
  * Return: 0
  */
 
 int main(void)
 {
-char c = "_putchar";
-int k;
-for (k = 0; k < 8; k++)
-
+char c[8] = "_putchar";
+int a;
+for (a = 0; a < 8; a++)
 {
-_putchar(c[k]);
+_putchar(c[a]);
 }
-
 _putchar('\n');
 return (0);
 }
