@@ -1,7 +1,18 @@
 #include "main.h"
+/**
+ * main - check code
+ * _putchar - prints character c to stdout
+ * Return: 0
+ */
 
 int main(void)
 {
-	_puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
-	return (0);
+char c[8] = "_putchar";
+int a;
+for (a = 0; a < 8; a++)
+{
+_putchar(c[a]);
+}
+_putchar('\n');
+return (0);
 }
