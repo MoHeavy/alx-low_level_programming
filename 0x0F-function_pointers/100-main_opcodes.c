@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main - prints its opcodes
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: 0
+ * main - check the code for Holberton School students.
+ * @argc: argument count.
+ * @argv: argument vector.
+ *
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	int i, dent;
 	char *man = (char *) main;
+	int i, dent;
 
 	if (argc != 2)
 	{
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < dent; i++)
 	{
-		printf("02x", man[i] & 0xFF);
+		printf("%02x", man[i] & 0xFF);
 		if (i != dent - 1)
 			printf(" ");
 	}
