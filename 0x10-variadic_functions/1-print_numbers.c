@@ -4,7 +4,6 @@
  * print_numbers - prints numbers followed by a new line
  * @separator: string to be printed between numbers
  * @n: number of integers
- * if @separator is NULL, don't print
  * Return: 0
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -17,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		printf("%d", va_arg(valist, int));
-		if (separator && i < n- 1)
+		if (separator && i < n - 1)
 			printf("%s", separator);
 	}
 
